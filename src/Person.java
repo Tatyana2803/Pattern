@@ -54,7 +54,6 @@ public class Person {
     }
 
     public PersonBuilder newChildBuilder() {
-
         return new PersonBuilder().setSurname(surname).setAddress(address);
     }
 

@@ -5,8 +5,8 @@ public class PersonBuilder {
     private int age;
     private String address;
 
-    public PersonBuilder setName(String name) throws IllegalArgumentException{
-        if (name==null || name.isEmpty()){
+    public PersonBuilder setName(String name) throws IllegalArgumentException {
+        if (name == null || name.isEmpty()) {
             throw new IllegalArgumentException("There is no name");
         } else {
             this.name = name;
@@ -24,7 +24,7 @@ public class PersonBuilder {
     }
 
     public PersonBuilder setAge(int age) throws IllegalArgumentException {
-        if (age<0) {
+        if (age < 0) {
             throw new IllegalArgumentException("Age is negative");
         }
         this.age = age;
